@@ -20,6 +20,10 @@ add_executable(Esercizio2
 
 add_executable(Esercizio3
         Esercizio3_Avanzato/main.cpp
+        Esercizio3_Avanzato/CartaCredito.cpp
+        Esercizio3_Avanzato/Contanti.cpp
+        Esercizio3_Avanzato/MetodoPagamento.cpp
+        Esercizio3_Avanzato/PayPal.cpp
 )
 
 add_executable(Esercizio4
