@@ -9,10 +9,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(Esercizio1
         Esercizio1_Base/main.cpp
+        Esercizio1_Base/Veicolo.cpp
 )
 
 add_executable(Esercizio2
         Esercizio2_Medio/main.cpp
+        Esercizio2_Medio/Personaggio.cpp
+
 )
 
 add_executable(Esercizio3

@@ -1,34 +1,39 @@
 //
 // Created by Rafid on 25/11/2026.
 //
+using namespace std;
 #include <stdio.h>
 #include "Veicolo.h"
+#include <iostream>
 
 #include <iostream>
 #include <ostream>
 
-class Veicolo {
-    public:
-    void virtual Muovi()=0;
-    void virtual Descrizione()=0;
-};
+void Auto::Muovi() {
+    cout<<"L'auto sta accelerando"<<endl;
+}
 
-class Auto:public Veicolo {
-    public:
-    void Muovi()override{cout << "L'auto si si sta muovendo" << endl;}
-    void Descrizione()override{cout << "Il veicolo è un auto" << endl;}
-};
+void Auto::Descrizione() {
+    cout<<"Il veicolo è una auto"<<endl;
+
+}
+
+void Bicicletta::Muovi() {
+    cout<<"La bici sta accelerando"<<endl;
+}
+
+void Bicicletta::Descrizione() {
+    cout<<"Il veicolo è una bici"<<endl;
+
+}
+
+void Treno::Muovi() {
+    cout<<"Il treno sta accelerando"<<endl;
+}
+
+void Treno::Descrizione() {
+    cout<<"Il veicolo è un treno"<<endl;
+
+}
 
 
-class Bicicletta:public Veicolo {
-public:
-    void Muovi()override{cout << "La bicicletta si si sta muovendo" << endl;}
-    void Descrizione()override{cout << "Il veicolo è una bici" << endl;}
-};
-
-
-class Treno:public Veicolo {
-public:
-    void Muovi()override{cout << "Il treno si si sta muovendo" << endl;}
-    void Descrizione()override{cout << "Il veicolo è un Treno" << endl;}
-};
