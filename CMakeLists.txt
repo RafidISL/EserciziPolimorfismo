@@ -28,4 +28,6 @@ add_executable(Esercizio3
 
 add_executable(Esercizio4
         Esercizio4_Challenge/main.cpp
+        Esercizio4_Challenge/GestoreNotifiche.cpp
+        Esercizio4_Challenge/Notifica.cpp
 )
